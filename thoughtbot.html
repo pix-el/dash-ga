@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        body {
+            background-color: grey;
+        }
+        div {
+            background: #ffffff;
+            height: 50px;
+            width: 100px;
+            margin: auto;
+        }
+        .icon {
+            position: relative;
+            height: 400px;
+            width: 400px;
+            border-radius: 100%;
+            background: #cc0000;
+            top: 200px;
+        }
+        .face {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .eyes {
+            background: #ffffff;
+            height: 20px;
+            width: 20px;
+            border-radius: 100%;
+            border: 5px solid #cc0000;
+            display: inline-block;
+        }
+        .lefteye {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .righteye {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .torso {
+            height: 100px;
+            width: 200px;
+            position: relative;
+        }
+        .arms {
+            height: 80px;
+            width: 5px;
+            background: #cc0000;
+        }
+        .leftarm {
+            position: absolute;
+            top: 30px;
+            left: 45px;
+        }
+        .rightarm {
+            position: absolute;
+            top: 30px;
+            left: 150px;
+        }
+        .feet {
+            position: relative;
+        }
+        .legs {
+            height: 80px;
+            width: 10px;
+            background: #cc0000;
+            position: absolute;
+            left: 45px;
+        }
+        .wifi {
+            border: 5px solid #ffffff;
+            background: #cc0000;
+            border-radius: 100%;
+        }
+        .signals {
+            background: #cc0000;
+            height: 100px;
+            width: 100px;
+            position: relative;
+        }
+        .signal1 {
+            height: 80px;
+            width: 80px;
+            position: absolute;
+            top: 45px;
+            left: 5px;
+        }
+        .signal2 {
+            height: 60px;
+            width: 60px;
+            position: absolute;
+            top: 55px;
+            left: 15px;
+        }
+        .signal3 {
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            top: 65px;
+            left: 25px;
+        }
+        .lefttriangle {
+            height: 0px;
+            width: 0px;
+            border-top: 25px solid transparent;
+            border-bottom: 25px solid #cc0000;
+            border-left: 25px solid #cc0000;
+            border-right: 25px solid transparent;
+            position: absolute;
+            background: transparent;
+            top: 50px;
+            left: 0;
+        }
+        .righttriangle {
+            height: 0px;
+            width: 0px;
+            border-top: 25px solid transparent;
+            border-bottom: 25px solid #cc0000;
+            border-left: 25px solid transparent;
+            border-right: 25px solid #cc0000;
+            position: absolute;
+            background: transparent;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="icon">
+        <div class="signals">
+            <div class="wifi signal1"></div>
+            <div class="wifi signal2"></div>
+            <div class="wifi signal3"></div>
+            <div class="lefttriangle"></div>
+            <div class="righttriangle"></div>
+
+        </div>
+        <div class="face">
+            <div class="eyes lefteye"></div>
+            <div class="eyes righteye"></div>
+        </div>
+        <div class="torso">
+            <div></div>
+            <div class="arms leftarm"></div>
+            <div class="arms rightarm"></div>
+        </div>
+        <div class="feet">
+            <div class="legs"></div>
+        </div>
+    </div>
+</body>
